@@ -48,4 +48,25 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         return view('products.show', compact('product'));
     }
+
+    public function destroy($id)
+    {
+        $product = Product::findOrFail($id);
+        $product->delete();
+    
+        return redirect()->route('home')->with('success', 'Sản phẩm đã được xóa thành công.');
+    }
+
+    public function edit($id)
+    {
+        $product = Product::findOrFail($id);
+        return view('products.edit', compact('product'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+        $product->update($request->except('_token'));
+        return redirect()->route('products.show', $id)->with('success', 'Sản phẩm đã được cập nhật thành công.');
+    }
 }

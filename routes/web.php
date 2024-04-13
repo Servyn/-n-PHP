@@ -25,3 +25,11 @@ Route::post('/products', [ProductController::class, 'store'])->name('products.st
 Route::get('/product/{id}', [ProductController::class, 'show'])->name('products.show');
 
 // Route::get('/products/{id}', 'ProductController@show')->name('products.show');
+Route::delete('/products/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
+Route::get('/products/{id}/edit', [ProductController::class, 'edit'])->name('products.edit');
+Route::put('/products/{id}', [ProductController::class, 'update'])->name('products.update');
+
+Route::prefix('products')->group(function () {
+    Route::get('/{id}/edit', [ProductController::class, 'edit'])->name('products.edit');
+    Route::put('/{id}', [ProductController::class, 'update'])->name('products.update');
+});
