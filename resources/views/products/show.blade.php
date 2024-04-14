@@ -14,4 +14,8 @@
         <button type="submit" class="btn btn-danger">Xóa sản phẩm</button>
     </form>
     <a href="{{ route('products.edit', ['id' => $product->id]) }}" class="btn btn-primary">Sửa sản phẩm</a>
+    <form action="{{ route('cart.add', ['id' => $product->id]) }}" method="POST">
+        @csrf
+        <button type="submit">Thêm vào giỏ hàng</button>
+    </form>
 @endsection

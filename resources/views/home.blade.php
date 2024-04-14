@@ -31,7 +31,6 @@
                     </div>
                     <div class="card-body">
                         <img src="{{ asset('storage/' . session('product')->image) }}" alt="Product Image">
-                        {{-- <p>Description: {{ session('product')->description }}</p> --}}
                         <p>Price: {{ session('product')->price }}</p>
                         <!-- Liên kết đến trang chi tiết sản phẩm -->
                         <a href="{{ route('products.show', session('product')->id) }}" class="btn btn-primary">Chi tiết
@@ -40,6 +39,7 @@
                 </div>
             </div>
         @endif
+
         <!-- Nội dung trang chính -->
         @include('partials.banner')
         @include('partials.product')
@@ -50,6 +50,8 @@
         <div class="text-center mt-3">
             <a href="{{ route('products.create') }}" class="btn btn-primary">Thêm sản phẩm</a>
         </div>
+        <!-- Nút để chuyển hướng đến trang giỏ hàng -->
+        <a href="{{ route('cart.index') }}" class="btn btn-primary">Xem giỏ hàng</a>
     </div>
 </body>
 
