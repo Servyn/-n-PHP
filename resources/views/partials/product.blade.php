@@ -1,3 +1,8 @@
+<head>
+    <!-- Các thẻ meta và các liên kết khác -->
+    <link rel="stylesheet" href="{{ asset('css/product.css') }}">
+</head>
+
 <section class="product">
     <div class="container">
         <div class="product-container">

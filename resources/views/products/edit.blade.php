@@ -1,5 +1,9 @@
 <!-- resources/views/products/edit.blade.php -->
 
+<head>
+    <!-- Các thẻ meta và các liên kết khác -->
+    <link rel="stylesheet" href="{{ asset('css/edit.css') }}">
+</head>
 @extends('layouts.app')
 
 @section('content')
@@ -29,7 +33,6 @@
                 <input type="file" class="form-control-file" id="image" name="image">
             </div>
 
-            <!-- Thêm các trường khác nếu cần -->
 
             <button type="submit" class="btn btn-primary">Lưu</button>
         </form>

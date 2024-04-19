@@ -1,0 +1,42 @@
+.process {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.process-container {
+    display: flex;
+    justify-content: center;
+}
+
+.process-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.process-item {
+    width: calc(100% / 4 - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.process-item-img {
+    padding: 20px;
+    text-align: center;
+}
+
+.process-item-img img {
+    width: 100px;
+}
+
+.process-item-info {
+    padding: 20px;
+}
+
+.process-item-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}

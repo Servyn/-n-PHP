@@ -1,5 +1,9 @@
 <!-- resources/views/cart.blade.php -->
 
+<head>
+    <!-- Các thẻ meta và các liên kết khác -->
+    <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
+</head>
 @extends('layouts.app')
 
 @section('content')

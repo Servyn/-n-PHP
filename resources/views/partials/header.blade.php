@@ -1,5 +1,9 @@
 <!-- resources/views/layouts/header.blade.php -->
 
+<head>
+    <!-- Các thẻ meta và các liên kết khác -->
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+</head>
 <header class="header">
     <div class="container">
         <div class="header-container">
@@ -53,8 +57,8 @@
                 <a href="#" class="header-nav-item">About</a>
             </div>
             <div class="header-auth">
-                <a href="{{ route('login') }}" class="header-auth-login btn btn--primary">Login</a>
-                <a href="{{ route('register') }}" class="header-auth-register btn btn--secondary">Sign up</a>
+                {{-- <a href="{{ route('login') }}" class="header-auth-login btn btn--primary">Login</a> --}}
+                {{-- <a href="{{ route('register') }}" class="header-auth-register btn btn--secondary">Sign up</a> --}}
             </div>
         </div>
     </div>

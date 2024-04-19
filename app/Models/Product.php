@@ -15,7 +15,7 @@ class Product extends Model
         'name',
         'description',
         'price',
-        'image', // Thêm trường image vào trong $fillable
-        '_token', // Thêm trường _token vào trong $fillable
+        'image', 
+        '_token', 
     ];
 }
