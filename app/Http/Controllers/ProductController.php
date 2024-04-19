@@ -42,7 +42,7 @@ class ProductController extends Controller
         return redirect()->route('home')->with('product', $product)->with('success', 'Product created successfully');
     }
 
-    // Hiển thị chi tiết sản phẩm
+   
     public function show($id)
     {
         $product = Product::findOrFail($id);

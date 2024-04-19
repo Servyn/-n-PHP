@@ -1,3 +1,7 @@
+<head>
+    <!-- Các thẻ meta và các liên kết khác -->
+    <link rel="stylesheet" href="{{ asset('css/process.css') }}">
+</head>
 <section class="process">
     <div class="container">
         <div class="process-container">

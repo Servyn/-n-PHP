@@ -1,3 +1,7 @@
+<head>
+    <!-- Các thẻ meta và các liên kết khác -->
+    <link rel="stylesheet" href="{{ asset('css/create.css') }}">
+</head>
 @extends('layouts.app')
 
 @section('content')

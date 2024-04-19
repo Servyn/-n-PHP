@@ -1,0 +1,47 @@
+.product-show {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.product-show h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-show p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-show form {
+    margin-top: 20px;
+}
+
+.product-show button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.product-show button:hover {
+    background-color: #c82333;
+}
+
+.product-show .btn-primary {
+    background-color: #007bff;
+}
+
+.product-show .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.product-show form button[type="submit"] {
+    margin-right: 10px;
+}
